@@ -1,11 +1,11 @@
 let x = document.getElementById("monnom");
 
 function green(){
-    x.style.borderColor = "lightgreen";
+    this.style.borderColor = "lightgreen";
 }
 
 function red(){
-    x.style.borderColor = "red";
+    this.style.borderColor = "red";
 }
 
 x.addEventListener("focusin", green);

@@ -1,14 +1,9 @@
-let a=document.getElementById(catet1);
-let b=document.getElementById(catet2);
-
-let aval = a.value;
-let bval = b.value;
-
 function hipot(){
-    let x=(aval*aval + bval*bval);
-    c = Math.pow(x, 1/2);
-    return c;
-};
+    let a = document.getElementById("catet1").value; //cela prends les valeurs saisis par l'utilisateur
+    let b = document.getElementById("catet2").value;
+    let x=(a*a + b*b);
+    c = Math.pow(x, 1/2); //resultat mathemathique est correct hip=(a²+b²)^1/2
+    document.getElementById("resultat").innerHTML = c; //cela insert le valeur d'une variable c dans une id "resultat"
+    };
 
-
-document.getElementById("resultat").addEventListener("click", hipot);
+    document.getElementById("bouton").addEventListener("click", hipot); //une fois on est clicqué sur le bouton (class bouton), la fonction s'execute
